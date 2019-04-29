@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Lykke.HttpClientGenerator.Caching
+namespace MihailYartsev.HttpClientGenerator.Caching
 {
     /// <summary>
     /// Specifies the amount of time to cache this method call.

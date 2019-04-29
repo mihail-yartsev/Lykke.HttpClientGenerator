@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Refit;
 
-namespace Lykke.HttpClientGenerator.Tests
+namespace MihailYartsev.HttpClientGenerator.Tests
 {
     public interface ITestInterface
     {

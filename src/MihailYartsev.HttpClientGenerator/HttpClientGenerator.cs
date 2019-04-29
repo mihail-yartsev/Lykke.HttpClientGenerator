@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using Lykke.HttpClientGenerator.Caching;
-using Lykke.HttpClientGenerator.Infrastructure;
+using MihailYartsev.HttpClientGenerator.Caching;
+using MihailYartsev.HttpClientGenerator.Infrastructure;
 using Refit;
 
-namespace Lykke.HttpClientGenerator
+namespace MihailYartsev.HttpClientGenerator
 {
     /// <summary>
     /// Generates client proxies for <see cref="Refit"/> interfaces

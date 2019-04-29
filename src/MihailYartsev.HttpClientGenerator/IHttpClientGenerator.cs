@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 
-namespace Lykke.HttpClientGenerator
+namespace MihailYartsev.HttpClientGenerator
 {
     /// <summary>
     /// Generates client proxies for <see cref="Refit"/> interfaces

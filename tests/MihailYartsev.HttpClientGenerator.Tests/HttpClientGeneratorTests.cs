@@ -5,11 +5,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using FluentAssertions;
-using Lykke.HttpClientGenerator.Infrastructure;
-using Newtonsoft.Json;
+using MihailYartsev.HttpClientGenerator.Infrastructure;
 using NUnit.Framework;
 
-namespace Lykke.HttpClientGenerator.Tests
+namespace MihailYartsev.HttpClientGenerator.Tests
 {
     public class HttpClientGeneratorTests
     {

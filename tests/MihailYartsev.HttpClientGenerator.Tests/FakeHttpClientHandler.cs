@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Net;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Lykke.HttpClientGenerator.Tests
+namespace MihailYartsev.HttpClientGenerator.Tests
 {
     public class FakeHttpClientHandler : DelegatingHandler
     {

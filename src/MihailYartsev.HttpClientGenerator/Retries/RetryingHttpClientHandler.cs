@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -9,7 +8,7 @@ using JetBrains.Annotations;
 using Polly;
 using Polly.Retry;
 
-namespace Lykke.HttpClientGenerator.Retries
+namespace MihailYartsev.HttpClientGenerator.Retries
 {
     /// <summary>
     /// Adds retries to the http request

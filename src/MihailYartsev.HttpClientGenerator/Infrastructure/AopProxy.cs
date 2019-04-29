@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using JetBrains.Annotations;
 
-namespace Lykke.HttpClientGenerator.Infrastructure
+namespace MihailYartsev.HttpClientGenerator.Infrastructure
 {
     /// <summary>
     /// Helper to generate a calls wrapping proxy

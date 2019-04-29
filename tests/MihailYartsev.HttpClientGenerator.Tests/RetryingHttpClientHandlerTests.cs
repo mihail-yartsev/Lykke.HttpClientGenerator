@@ -2,11 +2,11 @@
 using System.Net;
 using System.Net.Http;
 using FluentAssertions;
-using Lykke.HttpClientGenerator.Retries;
+using MihailYartsev.HttpClientGenerator.Retries;
 using NUnit.Framework;
 using Refit;
 
-namespace Lykke.HttpClientGenerator.Tests
+namespace MihailYartsev.HttpClientGenerator.Tests
 {
     public class RetryingHttpClientHandlerTests
     {

@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.Threading.Tasks;
-using Lykke.HttpClientGenerator.Infrastructure;
 using Microsoft.Extensions.Caching.Memory;
+using MihailYartsev.HttpClientGenerator.Infrastructure;
 using Newtonsoft.Json;
 using Polly;
 using Polly.Caching;
 using Polly.Caching.MemoryCache;
 
-namespace Lykke.HttpClientGenerator.Caching
+namespace MihailYartsev.HttpClientGenerator.Caching
 {
     /// <summary>
     /// Adds caching to method calls.

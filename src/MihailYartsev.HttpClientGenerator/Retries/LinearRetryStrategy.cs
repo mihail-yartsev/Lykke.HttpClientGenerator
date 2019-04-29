@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lykke.HttpClientGenerator.Retries
+namespace MihailYartsev.HttpClientGenerator.Retries
 {
     /// <summary>
     /// Describes the linear url request retry behavior

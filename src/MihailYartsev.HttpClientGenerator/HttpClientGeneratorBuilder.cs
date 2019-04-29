@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using JetBrains.Annotations;
-using Lykke.HttpClientGenerator.Caching;
-using Lykke.HttpClientGenerator.Infrastructure;
-using Lykke.HttpClientGenerator.Retries;
 using Microsoft.Extensions.PlatformAbstractions;
+using MihailYartsev.HttpClientGenerator.Caching;
+using MihailYartsev.HttpClientGenerator.Infrastructure;
+using MihailYartsev.HttpClientGenerator.Retries;
 
-namespace Lykke.HttpClientGenerator
+namespace MihailYartsev.HttpClientGenerator
 {
     /// <summary>
     /// Provides a simple interface for configuring the <see cref="HttpClientGenerator"/> for friquient use-cases

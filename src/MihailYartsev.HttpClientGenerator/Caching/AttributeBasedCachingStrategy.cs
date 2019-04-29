@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace Lykke.HttpClientGenerator.Caching
+namespace MihailYartsev.HttpClientGenerator.Caching
 {
     /// <summary>
     /// Specifies caching with times extracted from <see cref="ClientCachingAttribute"/>,

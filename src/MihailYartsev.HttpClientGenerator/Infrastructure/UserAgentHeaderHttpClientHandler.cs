@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Lykke.HttpClientGenerator.Infrastructure
+namespace MihailYartsev.HttpClientGenerator.Infrastructure
 {
     /// <summary>
     /// Adds User-Agent header to the request
