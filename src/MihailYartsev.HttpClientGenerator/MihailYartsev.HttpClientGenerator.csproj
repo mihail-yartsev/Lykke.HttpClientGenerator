@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>7.1</LangVersion>
-    <Version>1.0.0</Version>
+    <LangVersion>7.3</LangVersion>
+    <VersionPrefix>0.0-beta01</VersionPrefix>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageLicenseUrl>https://github.com/mihail-yartsev/MihailYartsev.HttpClientGenerator/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/mihail-yartsev/MihailYartsev.HttpClientGenerator</PackageProjectUrl>

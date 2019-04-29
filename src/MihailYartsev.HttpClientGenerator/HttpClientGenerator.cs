@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using MihailYartsev.HttpClientGenerator.Caching;
 using MihailYartsev.HttpClientGenerator.Infrastructure;
 using Refit;
 

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Net.Http;
 using JetBrains.Annotations;
 using Microsoft.Extensions.PlatformAbstractions;
-using MihailYartsev.HttpClientGenerator.Caching;
 using MihailYartsev.HttpClientGenerator.Infrastructure;
 using MihailYartsev.HttpClientGenerator.Retries;
 
@@ -24,7 +23,6 @@ namespace MihailYartsev.HttpClientGenerator
         private string _rootUrl ;
         [CanBeNull] private string _apiKey ;
         [CanBeNull] private IRetryStrategy _retryStrategy  = new LinearRetryStrategy();
-        [CanBeNull] private ICachingStrategy _cachingStrategy  = new AttributeBasedCachingStrategy();
         private List<ICallsWrapper> _additionalCallsWrappers  = new List<ICallsWrapper>();
         private List<DelegatingHandler> _additionalDelegatingHandlers  = new List<DelegatingHandler>();
 
@@ -53,24 +51,6 @@ namespace MihailYartsev.HttpClientGenerator
         public HttpClientGeneratorBuilder WithoutRetries()
         {
             _retryStrategy = null;
-            return this;
-        }
-
-        /// <summary>
-        /// Configures the caching strategy to use. If not called - the default one is used.
-        /// </summary>
-        public HttpClientGeneratorBuilder WithCachingStrategy([NotNull] ICachingStrategy cachingStrategy)
-        {
-            _cachingStrategy = cachingStrategy ?? throw new ArgumentNullException(nameof(cachingStrategy));
-            return this;
-        }
-
-        /// <summary>
-        /// Configures not to use methods results caching
-        /// </summary>
-        public HttpClientGeneratorBuilder WithoutCaching()
-        {
-            _cachingStrategy = null;
             return this;
         }
 
@@ -131,11 +111,6 @@ namespace MihailYartsev.HttpClientGenerator
                 {
                     yield return additionalCallsWrapper;
                 }
-            }
-            
-            if (_cachingStrategy != null)
-            {
-                 yield return new CachingCallsWrapper(_cachingStrategy);
             }
         }
 
